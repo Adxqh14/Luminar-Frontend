@@ -8,6 +8,7 @@ const navItems = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/tasks", label: "Tareas" },
   { href: "/calendario", label: "Calendario" },
+  { href: "/diccionario", label: "Diccionario" },
 ];
 
 export function Sidebar() {
