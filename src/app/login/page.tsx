@@ -34,7 +34,7 @@ export default function LoginPage() {
       });
 
       setToken(data.token);
-      router.push("/tasks");
+      router.push("/dashboard");
     } catch (err) {
       setError(err instanceof Error ? err.message : "Error inesperado");
     } finally {
