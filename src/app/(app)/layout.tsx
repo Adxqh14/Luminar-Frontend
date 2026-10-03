@@ -5,6 +5,8 @@ import { useRouter } from "next/navigation";
 import { getToken } from "@/lib/api";
 import { Sidebar } from "@/components/sidebar";
 import { Topbar } from "@/components/topbar";
+import { CommandPalette } from "@/components/command-palette";
+
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const isClient = useSyncExternalStore(
@@ -24,10 +26,11 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="flex bg-neutral-50 dark:bg-neutral-900">
       <Sidebar />
+      <CommandPalette />
       <main className="flex-1 overflow-y-auto">
-          <Topbar />
+        <Topbar />
         {children}
-        </main>
+      </main>
     </div>
   );
 }
