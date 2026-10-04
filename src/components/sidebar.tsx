@@ -9,6 +9,7 @@ const navItems = [
   { href: "/tasks", label: "Tareas" },
   { href: "/calendario", label: "Calendario" },
   { href: "/diccionario", label: "Diccionario" },
+  { href: "/spotify", label: "Spotify" },
 ];
 
 export function Sidebar() {
