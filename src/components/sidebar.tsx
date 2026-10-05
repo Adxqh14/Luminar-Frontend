@@ -10,6 +10,7 @@ const navItems = [
   { href: "/calendario", label: "Calendario" },
   { href: "/diccionario", label: "Diccionario" },
   { href: "/spotify", label: "Spotify" },
+  { href: "/ia", label: "Hub de IA" },
 ];
 
 export function Sidebar() {
